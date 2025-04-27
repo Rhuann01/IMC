@@ -16,8 +16,8 @@ function bto() {
 
   if (imc < 18.5) {
     clas.textContent = `Você está bem abaixo do peso`;
-    clas.style.color = " #5DADE2";
-  } else if (18.5 >= imc && imc < 24.9) {
+    clas.style.color = "#5DADE2";
+  } else if (18.5 <= imc && imc < 24.9) {
     clas.textContent = `Você está com o peso normal`;
     clas.style.color = " #58D68D";
   } else if (imc >= 25 && imc < 30) {
@@ -26,7 +26,7 @@ function bto() {
   } else if (imc >= 30 && imc < 35) {
     clas.textContent = `Você está Obeso`;
     clas.style.color = " #EB984E";
-  } else {
+  } else if (imc > 35 ) {
     clas.textContent = `Você está com obesidade extrema`;
     clas.style.color = "	#C0392B";
   }
