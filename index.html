@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
+    <title>IMC</title>
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="esquerda">
+        <h1 class="text1">Seja bem vindo!!</h1>
+        <h2>Vamos descobrir se você esta acima do peso </h2>
+        <div class="img">
+          <img src="/img/women-gym.svg" alt="women-gym" />
+        </div>
+      </div>
+
+      <div class="direita">
+        <div class="card-login">
+          <h1>Caculadora de IMC</h1>
+          <div class="prom">
+            <label class="la" for="peso">Peso</label>
+            <i class="fa-solid fa-weight-hanging"></i>
+            <input class="Num" type="number" name="peso" id="weight" placeholder="Exemplo: 80" />
+          </div>
+
+          <div class="prom">
+            <label class="la" for="Altura">Altura</label>
+            <input class="Num" type="number" name="altura" id="Height" placeholder="Exemplo: 1.80" />
+          </div>
+
+          <button type="button" onclick="bto()">Calcule</button>
+
+          <p class="resultado">
+            
+          </p>
+          <p class="final"></p>
+        </div>
+      </div>
+    </div>
+    <script src="/JS/script.js"></script>
+  </body>
+</html>
