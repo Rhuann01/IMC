@@ -148,29 +148,69 @@ input[type="number"]::-webkit-inner-spin-button {
   left: 345px;
 }
 
+@media (max-width: 1280px) {
+  .posi {
+    left: 88%;
+  }
+}
 
-@media (max-width: 820px) {
+@media (max-width: 1030px) {
+  body {
+    background-color: var(--cor-sec);
+  }
 
+  .conteiner {
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza os itens */
+  }
+
+  .esquerda h1,
+  .esquerda h2 {
+    display: none; /* Esconde os textos na parte esquerda */
+  }
+
+  .img {
+    width: 45vw;
+    margin-bottom: 20px; /* Ajusta o espaço entre imagem e card */
+  }
+
+  .direita {
+    width: 100vw;
+    height: auto;
+    padding: 20px;
+  }
+
+  .card-login {
+    width: 65%; /* O card agora ocupa mais espaço */
+    padding: 20px; /* Ajustando padding */
+  }
+
+  .posi {
+    left: 90%;
+  }
+}
+
+/* Para telas menores que 720px */
+@media (max-width: 720px) {
   body {
     background-color: var(--cor-sec);
   }
 
   .esquerda {
-    display: none; /* Esconde a parte esquerda em telas pequenas */
+    display: none; /* Oculta o lado esquerdo */
   }
 
   .direita {
-    width: 100vw; /* A direita ocupa toda a tela */
-    height: auto; /* Altura ajustada */
-    padding: 20px; /* Ajustando o padding */
+    width: 100vw;
+    height: auto;
+    padding: 20px;
   }
 
   .card-login {
-    width: 100%; /* Card ocupa mais espaço */
+    width: 100%; /* O card ocupa mais espaço */
   }
 
   .posi {
-    left: 87%; /* Ajuste da posição do ícone */
-    top: 36px; /* Ajuste do topo */
+    left: 87%; /* Ajuste mais suave para o ícone */
   }
 }
